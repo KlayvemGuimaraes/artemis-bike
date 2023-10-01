@@ -3,6 +3,7 @@ import Banner from "./componentes/Banner";
 import Formulario from "./componentes/Formulario";
 import Rodape from "./componentes/Rodape";
 import Time from "./componentes/Time";
+import Loja from "./componentes/Loja";
 import { v4 as uuidv4 } from 'uuid';
 
 function App() {
@@ -268,6 +269,7 @@ function App() {
 
   return (
     <div>
+      <Loja></Loja>
       <Banner />
       <Formulario 
         cadastrarTime={cadastrarTime}
