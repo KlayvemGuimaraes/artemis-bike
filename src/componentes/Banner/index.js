@@ -1,9 +1,5 @@
 import './banner.css'
 
-function goToItem(url){
-    window.open(url, "_blank");
-}
-
 const Banner = () => {
     return (
         <>
