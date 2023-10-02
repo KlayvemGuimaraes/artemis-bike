@@ -1,4 +1,4 @@
-# Áartemis Bike 🚴‍♀️💨
+# Ártemis Bike 🚴‍♀️💨
 
 ![banner](public/readme/banner.png)
 
@@ -17,3 +17,14 @@ Para isso, basta preencher as informações solicitadas no formulário de inscri
 ![home](public/readme/loja.png)
 
 Nesta tela, a ciclista pode acessar todos os produtos disponíveis na loja do site.
+
+### Tecnologias Utilizadas:
+- HTML
+- CSS
+- JavaScript
+- FrameWork React
+
+### Requisitos de setup:
+- [Node.js](https://nodejs.org/en/docs)
+
+
