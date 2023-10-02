@@ -1,0 +1,29 @@
+.artemisLogo{
+    width: 125px;
+}
+
+.containerNavBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #231943;
+    padding: 25px 75px;
+}
+
+.navegacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.navegacao > .tela{
+    padding-bottom: 5px;
+    font-size: 22px;
+    color: white;
+}
+
+.navegacao > .tela:hover{
+    cursor: pointer;
+    border-bottom: white 1px solid;
+}
