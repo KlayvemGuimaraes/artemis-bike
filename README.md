@@ -3,13 +3,14 @@
 ![banner](public/readme/banner.png)
 
 Visualize o site em [artemis-bike.vercel.app](https://artemis-bike.vercel.app).
-> Saiba mais sobre o projeto em [artemisbike.vercel.app](https://artemisbike.vercel.app).
+> ❔ Saiba mais sobre o projeto [aqui](https://artemisbike.vercel.app).
 
 ## Home: Eventos
 
 ![home](public/readme/home.png)
 
 Nesta tela, a ciclista pode se inscrever em trilhas de ciclismo previamente marcadas ou criar uma nova trilha.
+Para isso, basta preencher as informações solicitadas no formulário de inscrição/cadastro.
 
 ## Loja
 
