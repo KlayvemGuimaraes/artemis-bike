@@ -3,10 +3,10 @@ import Banner from "./componentes/Banner";
 import Formulario from "./componentes/Formulario";
 import Rodape from "./componentes/Rodape";
 import Time from "./componentes/Time";
+import NavBar from "./componentes/NavBar";
 import Loja from "./componentes/Loja";
 import { v4 as uuidv4 } from 'uuid';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavBar from "./componentes/NavBar";
 
 function App() {
 
@@ -220,9 +220,9 @@ function App() {
     { 
       id: uuidv4(),
       favorito: false,
-      nome: 'DANIEL ARTINE',
-      cargo: '22',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+      nome: 'SIMONE PENNINCK',
+      cargo: 'Cicloativista',
+      imagem: 'https://pbs.twimg.com/profile_images/1499160593101733898/7wc8fKd0_400x400.jpg',
       time: times[5].nome
     },
     { 
@@ -302,6 +302,7 @@ function App() {
               </Route>
             </Routes>
         </BrowserRouter>
+        <Rodape />
     </div>
   );
 }
