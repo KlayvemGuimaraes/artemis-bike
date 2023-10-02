@@ -15,6 +15,9 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
     // Equipe
     const [nomeTime, setNomeTime] = useState('')
     const [corTime, setCorTime] = useState('')
+    const [kmsTime, setKmsTime] = useState('')
+    const [indTime, setIndTime] = useState('')
+    const [urlTime, setUrlTime] = useState('')
 
     const aoSubmeter = (evento) => {
         evento.preventDefault()
@@ -53,14 +56,14 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
                     items={times} 
                     valor={time}
                     aoAlterado={valor => setTime(valor)}/>
-                <Botao texto='Criar passeio' />
+                <Botao texto='Inscrever!' />
             </form>
 
             <form className="formulario" onSubmit={(evento => {
                 evento.preventDefault()
-                cadastrarTime({ nome: nomeTime, cor: corTime})
+                cadastrarTime({ nome: nomeTime, cor: corTime, kms: kmsTime, indicacao: indTime, url: urlTime})
             })}>
-                <h2>Preencha os dados para criar uma nova aventura!</h2>
+                <h2>Preencha os dados para criar uma nova trilha!</h2>
                 <Campo
                     obrigatorio
                     label='Nome'
@@ -70,13 +73,34 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
                 />
                 <Campo
                     obrigatorio
+                    label='Distância'
+                    placeholder='Digite quantos Kms a trilha percorre'
+                    valor={kmsTime}
+                    aoAlterado={valor => setKmsTime(valor)}
+                />
+                <Campo
+                    obrigatorio
+                    label='Indicação'
+                    placeholder='Adicione uma indicação de nível de ciclista'
+                    valor={indTime}
+                    aoAlterado={valor => setIndTime(valor)}
+                />
+                <Campo
+                    obrigatorio
+                    label='Imagem'
+                    placeholder='Informe o endereço da imagem'
+                    valor={urlTime}
+                    aoAlterado={valor => setUrlTime(valor)}
+                />
+                <Campo
+                    obrigatorio
                     type='color'
                     label='Cor' 
                     placeholder='Mostre me a cor da trilha!'
                     valor={corTime}
                     aoAlterado={valor => setCorTime(valor)}
                 />
-                <Botao texto='Criar um novo passeio' />
+                <Botao texto='Criar uma nova Trilha' />
             </form>
         </section>
     )

@@ -7,6 +7,15 @@
     background-color: #231943;
 }
 
+.foto > img {
+    width: 70%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.foto{ margin-bottom: 30px;}
+
 .time {
     background-color: white;
     margin: 30px 0;
@@ -37,4 +46,13 @@
     position: absolute;
     top: 25px;
     right: 50px;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
 }
