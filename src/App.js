@@ -4,9 +4,9 @@ import Formulario from "./componentes/Formulario";
 import Rodape from "./componentes/Rodape";
 import Time from "./componentes/Time";
 import NavBar from "./componentes/NavBar";
+import Loja from "./componentes/Loja";
 import { v4 as uuidv4 } from 'uuid';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavBar from "./componentes/NavBar";
 
 function App() {
 
@@ -302,6 +302,7 @@ function App() {
               </Route>
             </Routes>
         </BrowserRouter>
+        <Rodape />
     </div>
   );
 }
