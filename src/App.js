@@ -284,7 +284,7 @@ function App() {
                 aoCadastrar={colaborador => setColaboradores([...colaboradores, colaborador])}
                 />
               <section className="times">
-                <h1>Minha organização</h1>
+                <h1>Trilhas disponíveis!</h1>
                 {times.map((time, indice) => 
                   <Time 
                     aoFavoritar={resolverFavorito}
