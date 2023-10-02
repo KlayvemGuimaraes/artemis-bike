@@ -30,7 +30,7 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
     return (
         <section className="formulario-container">
             <form className="formulario" onSubmit={aoSubmeter}>
-                <h2>Preencha seus dados para se juntar á um passeio!</h2>
+                <h2>Preencha seus dados para se juntar a uma nova trilha!</h2>
                 <Campo
                     obrigatorio={true}
                     label='Nome'
@@ -39,8 +39,8 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
                     aoAlterado={valor => setNome(valor)}/>
                 <Campo
                     obrigatorio={true}
-                    label='Cargo' 
-                    placeholder='Digite seu cargo '
+                    label='Idade' 
+                    placeholder='Digite a sua idade'
                     valor={cargo}
                     aoAlterado={valor => setCargo(valor)}/>
                 <Campo 
@@ -49,7 +49,7 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
                     aoAlterado={valor => setImagem(valor)}/>
                 <ListaSuspensa 
                     obrigatorio={true}
-                    label='Times'
+                    label='Trilhas'
                     items={times} 
                     valor={time}
                     aoAlterado={valor => setTime(valor)}/>
@@ -60,7 +60,7 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
                 evento.preventDefault()
                 cadastrarTime({ nome: nomeTime, cor: corTime})
             })}>
-                <h2>Preencha os dados para criar um novo passeio!</h2>
+                <h2>Preencha os dados para criar uma nova aventura!</h2>
                 <Campo
                     obrigatorio
                     label='Nome'
