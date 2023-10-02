@@ -3,7 +3,7 @@ import Banner from "./componentes/Banner";
 import Formulario from "./componentes/Formulario";
 import Rodape from "./componentes/Rodape";
 import Time from "./componentes/Time";
-import Loja from "./componentes/Loja";
+import NavBar from "./componentes/NavBar";
 import { v4 as uuidv4 } from 'uuid';
 
 function App() {
@@ -218,9 +218,9 @@ function App() {
     { 
       id: uuidv4(),
       favorito: false,
-      nome: 'DANIEL ARTINE',
-      cargo: 'Engenheiro de Software na Stone Age',
-      imagem: 'https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg',
+      nome: 'SIMONE PENNINCK',
+      cargo: 'Cicloativista',
+      imagem: 'https://pbs.twimg.com/profile_images/1499160593101733898/7wc8fKd0_400x400.jpg',
       time: times[5].nome
     },
     { 
@@ -269,7 +269,7 @@ function App() {
 
   return (
     <div>
-      <Loja></Loja>
+      <NavBar />
       <Banner />
       <Formulario 
         cadastrarTime={cadastrarTime}
