@@ -30,7 +30,7 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
     return (
         <section className="formulario-container">
             <form className="formulario" onSubmit={aoSubmeter}>
-                <h2>Preencha os dados para criar o card do colaborador.</h2>
+                <h2>Preencha seus dados para se juntar á um passeio!</h2>
                 <Campo
                     obrigatorio={true}
                     label='Nome'
@@ -53,18 +53,18 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
                     items={times} 
                     valor={time}
                     aoAlterado={valor => setTime(valor)}/>
-                <Botao texto='Criar card' />
+                <Botao texto='Criar passeio' />
             </form>
 
             <form className="formulario" onSubmit={(evento => {
                 evento.preventDefault()
                 cadastrarTime({ nome: nomeTime, cor: corTime})
             })}>
-                <h2>Preencha os dados para criar um novo time.</h2>
+                <h2>Preencha os dados para criar um novo passeio!</h2>
                 <Campo
                     obrigatorio
                     label='Nome'
-                    placeholder='Digite o nome do time '
+                    placeholder='Digite o destino da trilha'
                     valor={nomeTime}
                     aoAlterado={valor => setNomeTime(valor)}
                 />
@@ -72,11 +72,11 @@ const Formulario = ({aoCadastrar, times, cadastrarTime}) => {
                     obrigatorio
                     type='color'
                     label='Cor' 
-                    placeholder='Digite a cor do time '
+                    placeholder='Mostre me a cor da trilha!'
                     valor={corTime}
                     aoAlterado={valor => setCorTime(valor)}
                 />
-                <Botao texto='Criar um novo time' />
+                <Botao texto='Criar um novo passeio' />
             </form>
         </section>
     )

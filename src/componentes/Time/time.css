@@ -1,4 +1,17 @@
+.timeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #231943;
+}
+
 .time {
+    background-color: white;
+    margin: 30px 0;
+    border-radius: 25px;
+    width: 80%;
     text-align: center;
     padding: 32px;
     background-blend-mode: multiply;
